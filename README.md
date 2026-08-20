@@ -1,27 +1,15 @@
-# 3MTT School Portal - CI/CD Capstone
+# 3MTT School Portal - DevOps Capstone
 
-## Nigerian Problem Context
-Manual deploys break portals. Students cannot access results during updates.
+A full CI/CD pipeline deployment of a school result portal built for 3MTT Nigeria.
 
-## Solution
-A containerized School Portal with automated CI/CD pipeline using GitHub Actions + Docker + Render.
+**Live Demo**: https://school-portal-cicd.onrender.com
 
-## Core Features
-- Student can login with ID to view results
-- Build + Test stages in GitHub Actions
-- Auto-deploy on push to main branch
-- Zero downtime deployment
+### **Tech Stack**
+- **Frontend**: HTML, CSS
+- **Backend**: Node.js + Express
+- **Container**: Docker
+- **CI**: GitHub Actions
+- **CD**: Render + Docker Hub
+- **Registry**: Docker Hub
 
-## Tech Stack
-Git, GitHub Actions, Docker, Nginx, Render Free Tier
-
-## How to Deploy
-1. Push code to GitHub
-2. GitHub Actions builds and pushes Docker image
-3. Render pulls new image and deploys automatically
-
-## Live Demo
-https://your-render-link.onrender.com
-
-## Author
-Godspower Young - 3MTT DevOps Track
+### **CI/CD Pipeline Architecture**

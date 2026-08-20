@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3MTT School Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f4f8; margin: 0; padding: 20px; }
+   .container { max-width: 500px; margin: 50px auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    h1 { color: #1e40af; text-align: center; }
+   .subtitle { text-align:center; color: #555; font-size: 14px; margin-bottom: 20px; }
+    input, button { width: 100%; padding: 12px; margin: 10px 0; border-radius: 6px; border: 1px solid #ccc; font-size: 16px; box-sizing: border-box; }
+    button { background: #1e40af; color: white; border: none; cursor: pointer; font-weight: bold; }
+    button:hover { background: #1e3a8a; }
+    #result { margin-top: 20px; padding: 15px; background: #eff6ff; border-radius: 8px; display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 3MTT School Portal</h1>
+    <p class="subtitle">DevOps Capstone by Godspower Young</p>
+
+    <label>Student ID:</label>
+    <input type="text" id="studentId" placeholder="Enter 3MTT001">
+
+    <button onclick="viewResult()">View Result</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    const results = {
+      "3MTT001": "Godspower Young: DevOps - A, Cloud - B, Score: 92%",
+      "3MTT002": "Aisha Bello: DevOps - B, Cloud - A, Score: 88%",
+      "3MTT003": "Emeka Okafor: DevOps - A, Cloud - A, Score: 95%"
+    };
+
+    function viewResult() {
+      const id = document.getElementById("studentId").value.toUpperCase();
+      const resultDiv = document.getElementById("result");
+      if(results[id]) {
+        resultDiv.style.display = "block";
+        resultDiv.innerHTML = `<b>Result Found:</b><br>${results[id]}`;
+      } else {
+        resultDiv.style.display = "block";
+        resultDiv.innerHTML = "⚠️ Student ID not found. Try: 3MTT001, 3MTT002, 3MTT003";
+      }
+    }
+  </script>
+</body>
+</html>

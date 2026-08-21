@@ -21,6 +21,7 @@ Response: `{"status":"ok","message":"Server is running"}`
 1. `npm install`
 2. `npm start`
 3. Visit `http://localhost:3000/health`
-
+   
 ## Author
+Godspower Young - Fellow ID:FE/23/6256859
 3MTT Fellowship - DO-01 CI/CD for a School Portal
